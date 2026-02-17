@@ -1,0 +1,33 @@
+:root {
+    --colorFondo: #050505;
+    --colorCian: #00f2ff;
+    --colorMorado: #bc00ff;
+    --colorTexto: #ffffff;
+    --colorGris: #888888;
+    --fuentePrincipal: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--colorFondo);
+    color: var(--colorTexto);
+    font-family: var(--fuentePrincipal);
+    margin: 0;
+    background-image: 
+        linear-gradient(rgba(18, 18, 18, 0.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18, 18, 18, 0.5) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+.encabezadoPrincipal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.logotipo {
+    color: var(--colorCian);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
