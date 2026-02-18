@@ -98,3 +98,32 @@ body {
     cursor: pointer;
 }
 
+.cuadriculaModulos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 5%;
+}
+
+.tarjetaModulo {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid #222;
+    padding: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.tarjetaModulo:hover {
+    border-color: #444;
+    transform: translateY(-5px);
+}
+
+.barraProgreso {
+    height: 4px;
+    background: #1a1a1a;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+.relleno.cian { background: var(--colorCian); box-shadow: 0 0 10px var(--colorCian); }
+.relleno.morado { background: var(--colorMorado); box-shadow: 0 0 10px var(--colorMorado); }
