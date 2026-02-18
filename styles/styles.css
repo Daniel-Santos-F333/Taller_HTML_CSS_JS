@@ -58,3 +58,18 @@ body {
     padding: 80px 5%;
     max-width: 800px;
 }
+
+.etiquetaEstado {
+    background: #2a0035;
+    color: var(--colorMorado);
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    border: 1px solid var(--colorMorado);
+}
+
+.tituloPrincipal {
+    font-size: 3.5rem;
+    margin: 20px 0;
+    line-height: 1.1;
+}
