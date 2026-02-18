@@ -54,6 +54,12 @@ body {
     box-shadow: inset 0 0 5px var(--colorCian);
 }
 
+.contenedorPrincipal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .seccionHero {
     padding: 80px 5%;
     max-width: 800px;
@@ -197,4 +203,104 @@ body {
     font-size: 0.65rem;
     letter-spacing: 0.5px;
     margin: 0;
+}
+
+.seccionLiveStream {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedorLive {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.ventanaConsola {
+    flex: 1;
+    min-width: 350px;
+    background: #020202;
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.barraSuperior {
+    background: #0d0d0d;
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.punto {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.rojo { background: #ff5f56; }
+.amarillo { background: #ffbd2e; }
+.verde { background: #27c93f; }
+
+.cuerpoConsola {
+    padding: 20px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--colorCian);
+}
+
+.prompt { color: var(--colorMorado); }
+.comando { color: #8ed6fb; opacity: 0.8; }
+.separador { color: var(--colorGris); }
+.exito { color: #39FF14; text-shadow: 0 0 5px #39FF14; }
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    animation: parpadeo 1s infinite;
+}
+
+@keyframes parpadeo { 50% { opacity: 0; } }
+
+
+.infoStream {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tituloStream {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.textoDescripcion {
+    color: var(--colorGris);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.estadisticasStream {
+    display: flex;
+    gap: 40px;
+}
+
+.datoStream {
+    padding-left: 15px;
+}
+
+.datoStream.bordeCian { border-left: 3px solid var(--colorCian); }
+.datoStream.bordeMorado { border-left: 3px solid var(--colorMorado); }
+
+.datoStream h3 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.datoStream p {
+    font-size: 0.6rem;
+    color: #444;
+    margin-top: 5px;
+    letter-spacing: 1px;
 }
