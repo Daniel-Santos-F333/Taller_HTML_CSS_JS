@@ -119,11 +119,82 @@ body {
 }
 
 .barraProgreso {
-    height: 4px;
-    background: #1a1a1a;
+    height: 4px; 
+    background: #1a1a1a; 
     margin-top: 20px;
     border-radius: 2px;
+    overflow: hidden; 
 }
 
-.relleno.cian { background: var(--colorCian); box-shadow: 0 0 10px var(--colorCian); }
-.relleno.morado { background: var(--colorMorado); box-shadow: 0 0 10px var(--colorMorado); }
+.relleno {
+    height: 100%; 
+    display: block; 
+    transition: width 0.5s ease-in-out;
+}
+
+.relleno.cian { 
+    background-color: var(--colorCian); 
+    box-shadow: 0 0 10px var(--colorCian); 
+}
+
+.relleno.morado { 
+    background-color: var(--colorMorado); 
+    box-shadow: 0 0 10px var(--colorMorado); 
+}
+
+.relleno.gris { 
+    background-color: var(--colorGris); 
+    box-shadow: 0 0 5px var(--colorGris); 
+}
+
+.metricasRapidas {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.metrica strong {
+    font-size: 1.5rem;
+    display: block;
+}
+
+.metrica p {
+    color: var(--colorGris);
+    font-size: 0.7rem;
+}
+
+.piePagina {
+    margin-top: 100px;
+    padding: 40px 0;
+    text-align: center; 
+    border-top: 1px solid #1a1a1a;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 15px; 
+}
+
+.enlacesLegales {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.enlacesLegales a {
+    color: var(--colorGris);
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.enlacesLegales a:hover {
+    color: var(--colorCian);
+}
+
+.copyright {
+    color: #444; 
+    font-size: 0.65rem;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
